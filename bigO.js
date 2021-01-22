@@ -43,3 +43,37 @@ The problem above has the amount of operations dependent on the size of n
 The number of operations grows roughly in proportion with the size of n
  
  */
+
+
+ /* Big O allows us to formally talk about how the runtime of an algorithm
+ grows as the inputs grow
+ 
+ f(n) = n is linear
+ f(n) = n^2 is quadratic(As n grows the runtime squares)
+ f(n) = 1 is constant (runtime is always constant)
+
+
+
+
+ An O(n) inside of an O(n) is O(n^2) This is often found in nested for loops
+
+ const printAllPairs = n =>{
+     for(var i = 0; i< n; i++) {
+         for (var j = 0; j < n; j++){
+             console.log(i, j);
+         }
+     }
+ }
+
+ When classifying algorithms in big O, constants do not matter
+ For example:
+ O(2n) is simplified to O(n)
+ O(500) ===> O(1)
+ O(13n^2) ===> O(n^2)
+ O(1000n + 50) ===> O(n)
+
+ Arithmetic operations are constant 
+ Variable assignment is constant 
+ Accessing elements in an array or object is constant
+ In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
+ */
