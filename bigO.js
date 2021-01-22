@@ -76,4 +76,23 @@ The number of operations grows roughly in proportion with the size of n
  Variable assignment is constant 
  Accessing elements in an array or object is constant
  In a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
+
+
+ Space Complexity
+
+ Auxiliary space complexity: Space required  by the algorithm, not including space taken up by the inputs
+ - When talking about space complexity, we're usually referring to auxiliary space complexity
+
+ Rules of thumb:
+ - Most primitives(booleans, numbers, undefined, null) are constant space
+ - Strings require O(n) space where n is the length of the string
+
+
+ Sometimes, algorithms have a logarithmic complexity
+
+ logarithmic time complexity is great
+ Certain search algorithms have logarithmic time complexity
+ Efficient sorting algorithms involve logs
+ Recursion sometimes involves logarithmic space complexity
+ 
  */
