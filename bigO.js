@@ -95,4 +95,17 @@ The number of operations grows roughly in proportion with the size of n
  Efficient sorting algorithms involve logs
  Recursion sometimes involves logarithmic space complexity
  
+
+ Objects
+ - Good when you don't need a specific order 
+ - Good for quick insertion/removal(Constant time)
+ - Searching is O(N): Checking if a certain value is in the object, not key
+
+ Object.keys: O(N)
+ Object.values: O(N)
+ Object.entries: O(N)
+ hasOwnProperty: O(1)
+
+ 
+
  */
