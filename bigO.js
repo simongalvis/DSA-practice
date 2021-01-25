@@ -107,5 +107,16 @@ The number of operations grows roughly in proportion with the size of n
  hasOwnProperty: O(1)
 
  
+ Arrays
+ - Good when you need order
+ - Good when you need fast access
+ - Access: O(1)
+ - Searching: O(N)
+ - Insertion and removal: It depends
+   - Inserting or removing at the and is O(1)
+   - Inserting and removing from the beginning is O(N) since the array must be reindexed
+   -concat, slice, and splice are O(N)
+   - sort is O(N*log N)
+   - forEach, map, filter, reduce, etc are O(N)
 
  */
