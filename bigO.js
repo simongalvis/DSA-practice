@@ -119,4 +119,15 @@ The number of operations grows roughly in proportion with the size of n
    - sort is O(N*log N)
    - forEach, map, filter, reduce, etc are O(N)
 
+
+
+
+   Problem solving steps:
+
+   Step 1: Understand The Problem
+   Step 2: Concrete Examples
+   Step 3: Break It Down
+   Step 4: Solve Or Simplify
+   Step 5: Look Back and Refactor
+
  */
