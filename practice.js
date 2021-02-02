@@ -11,7 +11,7 @@ You can return the answer in any order.
     for(let i = 0; i < nums.length; i++){
         let index1 = i;
         for(let j = 0; j < nums.length; j++){
-            let index2 = i + 1;
+            let index2 = i + (j+1);
         if(nums[index1] + nums[index2] == target){
             return [index1, index2]
         }
@@ -19,4 +19,4 @@ You can return the answer in any order.
     }
 };
 
-console.log(twoSum([3,3], 6))
+console.log(twoSum([3,2,3], 6))
