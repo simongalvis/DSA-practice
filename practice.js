@@ -19,7 +19,7 @@ You can return the answer in any order.
     }
 };
 
-console.log(twoSum([3,2,3], 6))
+//console.log(twoSum([3,2,3], 6))
 
 /*
 You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
@@ -50,7 +50,7 @@ var addTwoNumbers = function(l1, l2){
 
 
 
-console.log(addTwoNumbers([9,9,9,9,9,9,9], [9,9,9,9]));
+//console.log(addTwoNumbers([9,9,9,9,9,9,9], [9,9,9,9]));
 
 /* Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
@@ -98,4 +98,35 @@ function findOdd(A) {
     }
     return 0;
   }
-  console.log(findOdd([1,2,3,1,2,3]))
+  //console.log(findOdd([1,2,3,1,2,3]))
+
+  /* 
+  Check to see if a string has the same amount of 'x's and 'o's. 
+  The method must return a boolean and be case insensitive. The string can contain any char.
+   */
+
+  function XO(str) {
+    //code here
+  var lowerStr = str.toLowerCase();
+  
+  var xCount = 0;
+  var oCount = 0;
+
+  for(let i=0; i<str.length; i++){
+    if (lowerStr[i] === 'x'){
+      xCount++;
+    }
+    else if(lowerStr[i] === 'o'){
+      oCount++;
+    }
+
+  }
+  if (xCount !== oCount){
+    return false
+  }
+else return true;
+
+}
+
+
+console.log(XO('XXXXXxOOOOOO'))
