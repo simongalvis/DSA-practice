@@ -41,11 +41,61 @@ var addTwoNumbers = function(l1, l2){
    var reversedSumArr = [];
    for(let i = reversedSum.toString().length; i > 0; i--){
     reversedSumArr.push(parseInt(reversedSum.toString()[i-1]))
-    console.log(reversedSum.toString()[0])
+    
    }
 
     return   reversedSumArr;
 }
 
+
+
+
 console.log(addTwoNumbers([9,9,9,9,9,9,9], [9,9,9,9]));
 
+/* Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order. */
+
+/* var isValid = function(s) {
+    
+    for(let i=0; i < s.length; i++){
+        var count = 0;
+        for(let j=0; j < s.length; j++){
+            if(s[j] ===s[i]){
+                count++;
+                
+            }
+            console.log(count)
+    }
+        if(count%2 !== 0){
+            return false;
+        }
+    }
+    return true;
+};
+console.log(isValid('()')) */
+
+/* 
+Given an array of integers, find the one that appears an odd number of times.
+
+There will always be only one integer that appears an odd number of times.
+ */
+
+function findOdd(A) {
+    for(let i= 0; i < A.length; i++){
+      var count = 0;
+      for(let j= 0; j < A.length; j++){
+        if(A[i] === A[j]){
+          count++;
+        }
+      }
+      if (count % 2 !== 0){
+        return A[i]
+      }
+    }
+    return 0;
+  }
+  console.log(findOdd([1,2,3,1,2,3]))
