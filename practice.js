@@ -129,4 +129,53 @@ else return true;
 }
 
 
-console.log(XO('XXXXXxOOOOOO'))
+//console.log(XO('XXXXXxOOOOOO'))
+
+var obj = {};
+obj['cadence'] = 33;
+//console.log(obj);
+
+function same(arr1, arr2){
+  var numSquares = 0;
+  for(let i=0; i<arr1.length; i++){
+    
+    for(let j=0; j<arr2.length; j++){
+      
+      if(arr2[j] === (arr1[i]*arr1[i])){
+        numSquares++;
+       // console.log('happened with ' + arr1[i])
+      }
+    }
+   // console.log(numSquares)
+   // console.log(arr1.length)
+    
+  }
+  if(numSquares !== arr1.length){
+    return false
+  } 
+  return true
+}
+//console.log(same([1,2,3], [4,1,9]))
+
+
+function validAnagram(str1, str2){
+  // add whatever parameters you deem necessary - good luck!
+  let obj1 = {};
+  for(let char of str1){
+      obj1[char] = (obj1[char] || 0) + 1;
+  }
+  let obj2 = {};
+  for(let char of str2){
+      obj2[char] = (obj2[char] || 0) + 1;
+  }
+
+
+  for(let key in obj1){
+    if(obj2[key] !== obj1[key]){
+      return false
+    }
+    else return true;
+  }
+ 
+}
+console.log(validAnagram('hello', 'olle'));
