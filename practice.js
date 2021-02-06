@@ -174,8 +174,8 @@ function validAnagram(str1, str2){
     if(obj2[key] !== obj1[key]){
       return false
     }
-    else return true;
+    
   }
- 
+  return true;
 }
-console.log(validAnagram('hello', 'olle'));
+console.log(validAnagram('helloby', 'byehello'));
