@@ -203,4 +203,32 @@ function sumZero(arr){
 }
 
 
-console.log(sumZero([-4,-3,-2,0,1,3,10]))
+//console.log(sumZero([-4,-3,-2,0,1,3,10]))
+
+/* 
+countUniqueValues: Implement a function called countUniqueValues, which accepts a sorted array, and counts the 
+unique values in the array. There can be negative numbers in the array, but it will always be sorted.
+*/
+
+function countUniqueValues(arr){
+  let p1 = 0;
+  let p2 = 1;
+  let uniqueValues = 0;
+
+  if(arr.length){
+    uniqueValues=1;
+  }
+  while(p2 < arr.length){
+    
+    if(arr[p2] != arr[p1]){
+      uniqueValues++;
+      
+    }
+    p2++;
+    p1++;
+  }
+  return uniqueValues;
+}
+
+console.log(countUniqueValues([-2,-1,-1,0,1]))
+//console.log('hello')
