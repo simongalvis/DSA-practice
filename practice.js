@@ -252,4 +252,28 @@ if(arr.length < num) return null;
   }
   return maxSum;
 }
-console.log(maxSubarraySum([1,2,1,1], 3))
+//console.log(maxSubarraySum([1,2,1,1], 3))
+
+
+//Divide and Conquer
+function search(array, val){
+
+  let min = 0;
+  let max = array.length -1;
+
+  while(min <= max){
+    let middle = Math.floor((min + max) / 2);
+    let currentElement = array[middle];
+
+    if(array[middle] < val){
+      min = middle + 1;
+    }
+    else if (array[middle] > val){
+      max = middle - 1;
+    }
+    else{
+      return middle;
+    }
+  }
+  return -1;
+}
