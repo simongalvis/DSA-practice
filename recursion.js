@@ -18,4 +18,14 @@ function checkForOdd(arr){
     }
     checkForOdd(arr);
 }
-console.log(checkForOdd([4,3,4,5,6,7,8,9,100,100,100]));
+//console.log(checkForOdd([4,3,4,5,6,7,8,9,100,100,100]));
+
+//Calculate the sum of a range of numbers
+function sumRange(num){
+    if(num === 1){
+        return 1;
+    }
+    return num + sumRange(num - 1);
+}
+
+console.log(sumRange(7));
