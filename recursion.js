@@ -28,4 +28,12 @@ function sumRange(num){
     return num + sumRange(num - 1);
 }
 
-console.log(sumRange(7));
+//console.log(sumRange(7));
+
+//Factorial
+function factorial(num){
+    if(num === 1) return 1;
+    return num * factorial(num -1);
+}
+
+console.log(factorial(7))
