@@ -1,3 +1,4 @@
+const LinkedList = require("./SinglyLinkedList")
 /*
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -282,3 +283,12 @@ function search(array, val){
   }
   return -1;
 }
+
+
+const ll = new LinkedList();
+
+ll.insertAtHead(10);
+ll.insertAtHead(20);
+ll.insertAtHead(30);
+
+console.log(ll);
