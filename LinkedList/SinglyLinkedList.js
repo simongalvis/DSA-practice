@@ -29,6 +29,35 @@ class LinkedList{
         }
         return currentElement
     }
+    insertAtIndex(index, value){
+        if(index > this.length || index < 0) return null;
+        if(index === 0){
+            this.insertAtHead(value);
+        }
+        const prev = this.getByIndex(index-1);
+        if(prev === null) return null;
+        const newNode = new Node(value, prev.next)
+        prev.next = newNode
+
+        this.length++;
+    }
+    deleteAtIndex(index){
+        if(index < 0 || index > this.length) return null;
+        if(index === 0){
+             this.head = this.head.next;
+             this.length--;
+        }
+        else{
+        const prev = this.getByIndex(index-1);
+        prev.next = this.getByIndex(index + 1);
+
+        
+        
+        
+        
+        this.length--;
+        }
+    }
     print(){
         let output = '';
         let current = this.head;

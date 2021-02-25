@@ -293,6 +293,8 @@ ll.insertAtHead(30);
 
 //console.log(ll);
 
-const linkdlst = LinkedList.fromValues(1, 2, 3)
+const linkdlst = LinkedList.fromValues(1, 2, 3 ,4, 5, 6, 7, 8, 9)
 
+linkdlst.print()
+linkdlst.deleteAtIndex(5)
 linkdlst.print()
