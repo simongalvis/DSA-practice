@@ -29,6 +29,15 @@ class LinkedList{
         }
         return currentElement
     }
+    print(){
+        let output = '';
+        let current = this.head;
+        for (let i = 0; i < this.length; i++){
+            output += `${current.value} => `
+            current = current.next
+        }
+        console.log(`${output}null`);
+    }
 
 }
 

@@ -291,4 +291,8 @@ ll.insertAtHead(10);
 ll.insertAtHead(20);
 ll.insertAtHead(30);
 
-console.log(ll);
+//console.log(ll);
+
+const linkdlst = LinkedList.fromValues(1, 2, 3)
+
+linkdlst.print()
