@@ -105,30 +105,57 @@ class Queue{
         }
     }
     //dequeue - remove an item from the queue
+    dequeue(){
+        if(this.front === null && this.back === null) return null;
+        if(this.front === null){
+            this.front = this.back;
+            this.back = null;
+        }
+        this.front = this.front.next;
+        if(this.back === null) return " empty";
+
+    }
     //print
     print(){
-        if(this.first === null) return null;
+        if(this.front === null) return null;
         let output = "";
         let current = this.front;
         while(current){
             current.next != null ? output+= current.value + " | " : output+= current.value;
             current = current.next;
         }
-        console.log(output);
+        
+        console.log(output );
     }
 }
 let q = new Queue();
 
 
-q.enqueue(77);
+ q.enqueue(77);
 q.enqueue(78);
 q.enqueue(79);
 q.enqueue(80);
 q.enqueue(81);
-q.enqueue(82);
+q.enqueue(82); 
 q.print();
-q.enqueue(83);
+q.dequeue(); 
 q.print();
+q.dequeue(); 
+q.print();
+q.dequeue(); 
+q.print();
+q.dequeue(); 
+q.print();
+q.dequeue(); 
+q.print();
+q.dequeue(); 
+q.print();
+q.dequeue(); 
+q.print();
+q.dequeue(); 
+q.print();
+
+console.log(q);
 
 
 
